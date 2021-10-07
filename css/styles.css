@@ -138,6 +138,7 @@ a{
 }
 .menu__link:hover{
     opacity: 1;
+    text-decoration: underline;
 }
 @media (min-width: 768px) {
     .logo{
@@ -145,6 +146,9 @@ a{
     }
     .menu{
         padding: 7rem 0;
+    }
+    .menu__list {
+        gap: 5.8rem;
     }
 }
 
