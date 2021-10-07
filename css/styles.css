@@ -141,11 +141,11 @@ a{
     padding: 2.2rem 3.8rem 6.6rem;
     background: url(../images/bg-curvy-mobile.svg), linear-gradient(var(--DarkBlue1) 50%, var(--DarkBlue2) 50%);
     background-size: contain;
-    background-position: 100% 41%;
+    background-position: 100% 39%;
     background-repeat: no-repeat;
 }
 .hero__img{
-    padding: 0 0 2rem;
+    padding: 0 0 3.7rem;
 }
 .hero__title{
     font-family: var(--Raleway);
