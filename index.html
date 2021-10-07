@@ -46,37 +46,43 @@
   </style> -->
   </head>
   <body>
-    <header class="container">
-      <nav class="menu" id="nac">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="logo Fylo" />
-        </div>
-        <ul class="menu__list">
-          <li><a class="menu__link" href="#features">Features</a></li>
-          <li><a class="menu__link" href="#team">Team</a></li>
-          <li><a class="menu__link" href="#nav">Sign In</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero__img">
-          <img src="./images/illustration-intro.png" alt="hero illustration" />
-        </div>
-        <div class="hero__content">
-          <p class="hero__title">
-            All your files in one secure location, accessible anywhere.
-          </p>
-          <p class="hero__text">
-            Fylo stores all your most important files in one secure location.
-            Access them wherever you need, share and collaborate with friends
-            family, and co-workers.
-          </p>
-          <div class="hero__btn">
-            <button class="btn">Get Started</button>
+    <header class="bg__header">
+      <div class="container">
+        <nav class="menu" id="nac">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="logo Fylo" />
           </div>
-        </div>
-      </section>
+          <ul class="menu__list">
+            <li><a class="menu__link" href="#features">Features</a></li>
+            <li><a class="menu__link" href="#team">Team</a></li>
+            <li><a class="menu__link" href="#nav">Sign In</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="bg__hero">
+        <section class="hero">
+          <div class="hero__img">
+            <img src="./images/illustration-intro.png" alt="hero illustration" />
+          </div>
+          <div class="hero__content">
+            <p class="hero__title">
+              All your files in one secure location, accessible anywhere.
+            </p>
+            <p class="hero__text">
+              Fylo stores all your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends
+              family, and co-workers.
+            </p>
+            <div class="hero__btn">
+              <button class="btn">Get Started</button>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <section class="features" id="features">
         <div class="grid">
@@ -150,8 +156,7 @@
           </p>
           <div class="ad_button">
             <a href="#" class="ad__btn"
-              >See how Fylo works <img src="./images/icon-arrow.svg" alt="icon"
-            /></a>
+              >See how Fylo works <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="b" cx="6" cy="6" r="6"/><filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0" in="shadowBlurOuter1"/></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(2 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="#62E0D9" xlink:href="#b"/></g><path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#1B2330"/></g></svg></a>
           </div>
         </article>
       </section>
@@ -223,9 +228,12 @@
           <form class="contact__form" autocomplete="off">
             <input
               type="email"
-              id="email"
+              name="email"
               placeholder="email@example.com"
               class="contact__email"
+              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+              required
+              title="Please enter a valid email address"
             />
             <input class="btn" type="submit" value="Get Started For Free" />
           </form>
@@ -233,46 +241,49 @@
       </div>
     </main>
 
-    <footer class="info">
-      <div class="logo__footer">
-        <img src="./images/logo.svg" alt="lofo Fylo" />
+    <footer class="bg__footer">
+      <div class="info">
+        <div class="logo__footer">
+          <img src="./images/logo.svg" alt="lofo Fylo" />
+        </div>
+        <section class="footer__content">
+          <div class="location">
+            <img src="./images/icon-location.svg" alt="icon" />
+            <p class="location__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          
+          <div class="footer__contact">
+            <div class="contact__item">
+              <img src="./images/icon-phone.svg" alt="icon" />
+              <p>+1-543-123-4567</p>
+            </div>
+            <div class="contact__item">
+              <img src="./images/icon-email.svg" alt="icon" />
+              <p>example@fylo.com</p>
+            </div>
+          </div>
+        
+          <ul class="nav__footer footer__item">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul class="legal footer__item">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+          <div class="social">
+            <a class="social__item" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="social__item" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="social__item" href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </section>
       </div>
-      <section class="footer__content">
-        <div class="location">
-          <img src="./images/icon-location.svg" alt="icon" />
-          <p class="location__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </div>
-        <div class="footer__contact">
-          <div class="contact__item">
-            <img src="./images/icon-phone.svg" alt="icon" />
-            <p>+1-543-123-4567</p>
-          </div>
-          <div class="contact__item">
-            <img src="./images/icon-email.svg" alt="icon" />
-            <p>example@fylo.com</p>
-          </div>
-        </div>
-
-        <ul class="nav__footer footer__item">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-        <ul class="legal footer__item">
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Privacy</a></li>
-        </ul>
-        <div class="social">
-          <a class="social__item" href="#"><i class="fab fa-facebook-f"></i></a>
-          <a class="social__item" href="#"><i class="fab fa-twitter"></i></a>
-          <a class="social__item" href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-      </section>
     </footer>
 
     <!-- <footer>
@@ -281,5 +292,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+  <script src="./js/app.js"></script>
   </body>
 </html>
