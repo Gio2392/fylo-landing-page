@@ -71,7 +71,7 @@ h1,h2,h3,p{
     margin: 0;
 }
 p{
-    opacity: .5;
+    opacity: .8;
 }
 img{
     max-width: 100%;
@@ -140,6 +140,9 @@ a{
     opacity: 1;
 }
 @media (min-width: 768px) {
+    .logo{
+        width: 18rem;
+    }
     .menu{
         padding: 7rem 0;
     }
@@ -224,6 +227,9 @@ a{
     text-align: center;
 }
 @media (min-width: 768px) {
+    .features{
+        padding: 0;
+    }
     .grid{
         padding: 0 2rem;
         max-width: 92rem;
@@ -238,7 +244,7 @@ a{
     }
     .card__img{
         max-width: auto;
-        height: 9rem;
+        height: 12rem;
     }
     .card__img img{
         object-fit: contain;
